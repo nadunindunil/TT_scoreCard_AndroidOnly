@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="TT SCORE CARD"
+            android:text="@string/scoreCard"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal" />
 
@@ -31,19 +31,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Player 1 Name"
+                android:text="@string/player1name"
                 android:ems="10"
                 android:id="@+id/player1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Player 2 Name"
+                android:text="@string/player2name"
                 android:ems="10"
                 android:id="@+id/player2"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -53,7 +55,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3 SETS"
+                    android:text="@string/set3"
                     android:id="@+id/set3"
                     android:layout_gravity="center_horizontal"
                     android:checked="true" />
@@ -61,7 +63,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5 SETS"
+                    android:text="@string/set5"
                     android:id="@+id/set5"
                     android:layout_gravity="center_horizontal"
                     android:checked="false" />
@@ -82,7 +84,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Who won the Toss"
                 android:id="@+id/textView2"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -92,7 +95,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player1"
+                    android:text="@string/p1"
                     android:id="@+id/tossP1"
                     android:layout_gravity="center_horizontal"
                     android:checked="false" />
@@ -100,7 +103,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PLayer2"
+                    android:text="@string/p2"
                     android:id="@+id/tossP2"
                     android:layout_gravity="center_horizontal"
                     android:checked="false" />
@@ -118,7 +121,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OKAY !"
+                android:text="@string/ok"
                 android:id="@+id/okBtn"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
