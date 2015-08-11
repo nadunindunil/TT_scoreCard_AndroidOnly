@@ -4,14 +4,23 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class ScoreActivity extends ActionBarActivity {
+
+    TextView player1Name,player2Name,toss1,toss2,sevice1,service2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
+
+        player1Name = (TextView)findViewById(R.id.p1Name);
+        player1Name.setText(MainActivity.names[0]);
+        player2Name = (TextView)findViewById(R.id.p2Name);
+        player2Name.setText(MainActivity.names[1]);
+
     }
 
 
